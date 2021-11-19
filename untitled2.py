@@ -19,9 +19,10 @@ def ativacao (u):
 
 def atualizaPesos(W, T, n, e, x):
     for i in range(len(W)):
-        W.iloc[i, 0] += n*e*x[i]
+        W.iloc[i, 0] += n * e * x[i]
         
-    T += n*e
+    T += n * e
+    return (W, T)
         
 #definir os parametros de entrada
 n = 0.5
